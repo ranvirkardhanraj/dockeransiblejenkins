@@ -19,7 +19,7 @@
         state: present
     - name: Start the container
       docker_container:
-        name: "dhanrajapp{{ DOCKER_TAG}}"
+        name: "dhanrajapp{{ DOCKER_TAG }}"
         image: "dhanrajranvirkar/tomcatserver:{{ DOCKER_TAG }}"
         state: started
         published_ports:
