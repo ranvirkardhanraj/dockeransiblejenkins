@@ -7,7 +7,7 @@
         name: python-pip
         state: present
     - name: Install docker
-      command: sudo amazon-linux-extras install docker
+      command: sudo amazon-linux-extras install docker -y
     - name: start docker
       service:
         name: docker
